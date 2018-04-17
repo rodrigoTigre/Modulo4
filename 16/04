@@ -4,37 +4,33 @@ import java.util.Scanner;
 
 public class JavaApplication8 {
 
-   
-    
     public static void main(String[] args) {
-        
-        int l,c;
-        Scanner Lers = new Scanner (System.in);
-        
+
+        int l, c;
+        Scanner Lers = new Scanner(System.in);
+
         System.out.print("numero de linhas");
-        l=Lers.nextInt();
+        l = Lers.nextInt();
         System.out.print("numero de colunas");
-        c=Lers.nextInt();
-        int[][]matriz= new int[l][c];
-        for (l=0;l<l;l++){
-            for (c=0;c<1;c++){
-                System.out.print(matriz[l][c]);
-                
+        c = Lers.nextInt();
+        int[][] matriz = new int[l][c];
+        for (l = 0; l < 3; l++) {
+            for (c = 0; c < 1; c++) {
+                System.out.printf("Insira o elemento M[%d][%d]: ", l, c);
+                matriz[l][c] = Lers.nextInt();
+
             }
-            
-        
-        
-      
-            
+
         }
-        
-        
-        
-                
-        
-        
-        
-        
+
+        System.out.println("\nA Matriz ficou: \n");
+        for (l = 0; l < 3; l++) {
+            for (c = 0; c < 1; c++) {
+                System.out.printf("\t %d \t", matriz[l][c]);
+
+            }
+
+        }
     }
-    
 }
+
