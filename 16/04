@@ -14,7 +14,7 @@ public class JavaApplication8 {
         System.out.print("numero de colunas");
         c = Lers.nextInt();
         int[][] matriz = new int[l][c];
-        for (l = 0; l < 3; l++) {
+        for (l = 0; l < 2; l++) {
             for (c = 0; c < 1; c++) {
                 System.out.printf("Insira o elemento M[%d][%d]: ", l, c);
                 matriz[l][c] = Lers.nextInt();
@@ -24,7 +24,7 @@ public class JavaApplication8 {
         }
 
         System.out.println("\nA Matriz ficou: \n");
-        for (l = 0; l < 3; l++) {
+        for (l = 0; l < 2; l++) {
             for (c = 0; c < 1; c++) {
                 System.out.printf("\t %d \t", matriz[l][c]);
 
