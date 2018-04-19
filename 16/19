@@ -1,0 +1,21 @@
+package javaapplication4;
+
+import java.util.Scanner;
+
+public class JavaApplication4 {
+
+   
+    public static void main(String[] args) {
+
+        Scanner Lers = new Scanner(System.in);
+        System.out.println("Digite a quantidade de termos da sequencia");
+        int n1 = 0, n2 = 1;
+        for (int qtd = Lers.nextInt(); qtd > 0; qtd--) {
+            System.out.print(n1 + " ");
+            int n3 = n1 + n2;
+            n1 = n2;
+            n2 = n3;
+        }
+
+    }
+}
