@@ -1,0 +1,23 @@
+package javaapplication9;
+
+import java.util.Scanner;
+
+public class JavaApplication9 {
+
+    public static void main(String[] args) {
+
+        Scanner Lers = new Scanner(System.in);
+        int declive, ordenadaNaOrigem, obj;
+
+        System.out.print("Declive?");
+        declive = Lers.nextInt();
+        System.out.print("Origem?");
+        ordenadaNaOrigem = Lers.nextInt();
+        System.out.println("f(x)=" + declive + "x+" + ordenadaNaOrigem);
+        System.out.println("Objeto?");
+        obj = Lers.nextInt();
+        System.out.println("f(" + obj + ")=" + (declive * obj + ordenadaNaOrigem));
+
+    }
+
+}
